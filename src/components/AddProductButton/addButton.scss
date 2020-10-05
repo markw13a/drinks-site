@@ -1,0 +1,15 @@
+.addButton {
+    display: flex;
+    justify-content: center;
+
+    &__button {
+        color: #fff;
+        background-color: #0075ff;
+        border: 1px solid darken(#0075ff, 10%);
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
