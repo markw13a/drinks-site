@@ -1,15 +1,41 @@
+$color_primary: #0075ff;
+
 .addButton {
     display: flex;
     justify-content: center;
 
     &__button {
         color: #fff;
-        background-color: #0075ff;
-        border: 1px solid darken(#0075ff, 10%);
+        background-color: $color_primary;
+        border: 1px solid darken($color_primary, 10%);
         border-radius: 5px;
         width: 30px;
         height: 30px;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    &__submit {
+        color: white;
+        background-color: $color_primary;
+        border: 1px solid darken($color_primary, 10%);
+        border-radius: 5px;
     }
 }
