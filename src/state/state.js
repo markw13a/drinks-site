@@ -2,7 +2,6 @@ import { createStore } from "redux";
 import produce from "immer";
 import { PRODUCTS, CATEGORIES } from "../data";
 
-// { "Wine": true }
 const initialActiveCategories = CATEGORIES.reduce((activeCategories, category) => {
     activeCategories[category] = true;
     return activeCategories;
@@ -10,6 +9,7 @@ const initialActiveCategories = CATEGORIES.reduce((activeCategories, category) =
 
 const initialState = {
     products: PRODUCTS,
+    // { "Wine": true, "Beer": true, "Cocktail": true }
     activeCategories: initialActiveCategories
 };
 
